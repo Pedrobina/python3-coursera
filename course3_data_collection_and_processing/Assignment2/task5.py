@@ -5,9 +5,10 @@
 
 students = [('Tamara', 95), ('Linda', 63), ('Carl', 70), ('Bob', 100), ('Raymond', 50), ('Sue', 75)]
 
-passed = None # Replace "None" with an expression that uses list comprehension
+passed = [approved[0] for approved in students if approved[1] >= 70]
+print(passed)
 
 assert 'Tamara' in passed
 assert 'Linda' not in passed
-assert 'Tamara' in passed
-assert 'Linda' not in passed
+assert 'Carl' in passed
+assert 'Raymond' not in passed
