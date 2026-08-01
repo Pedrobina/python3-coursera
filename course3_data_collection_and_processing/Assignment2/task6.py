@@ -5,7 +5,10 @@
 l1 = ['left', 'up', 'front']
 l2 = ['right', 'down', 'back']
 
-opposites = None # Replace "None" with an expression that uses `zip` and `filter`
+zipped = list(zip(l1, l2))
+opposites = list(filter(lambda x: len(x[0])>3 and len(x[1])>3 , zipped))
+
+
 
 
 assert ('left', 'right') in opposites
