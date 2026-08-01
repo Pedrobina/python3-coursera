@@ -3,7 +3,9 @@
 
 
 lst = [["hi", "bye"], "hello", "goodbye", [9, 2], 4]
-lst2 = None # Replace "None" with an expression that uses list comprehension
+lst2 = [element*2 for element in lst]
+
+print(lst2)
 
 
 assert "hellohello" in lst2
